@@ -1,4 +1,17 @@
 {
+  "name": "vizkart",
+  "version": "1.0.0",
+  "description": "Vizkart - AI-powered 3D E-commerce platform",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon backend/server.js",
+    "start": "node backend/server.js",
+    "build": "npm install && npm install --include=dev --prefix frontend && npm run build --prefix frontend"
+  },
+  "keywords": [],
+  "author": "Dinesh Dhiney",
+  "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
@@ -6,28 +19,15 @@
     "mongodb": "^6.17.0",
     "mongoose": "^8.16.0"
   },
-  "name": "vizkart",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "npm install && npm install --include=dev --prefix frontend && npm run build --prefix frontend",
-    "start": "node backend/server.js",
-    "dev": "nodemon backend/server.js"
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dinesh-TSD/Vizkart.git"
+    "url": "https://github.com/Dinesh-TSD/Vizkart.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
   "bugs": {
     "url": "https://github.com/Dinesh-TSD/Vizkart/issues"
   },
-  "homepage": "https://github.com/Dinesh-TSD/Vizkart#readme",
-  "devDependencies": {
-    "nodemon": "^3.1.10"
-  }
+  "homepage": "https://github.com/Dinesh-TSD/Vizkart#readme"
 }
